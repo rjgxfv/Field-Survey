@@ -13,6 +13,13 @@
 		EF77A60F219F807800E662BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF77A60D219F807800E662BC /* LaunchScreen.storyboard */; };
 		EF77A61A219F807800E662BC /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A619219F807800E662BC /* Field_SurveyTests.swift */; };
 		EF77A625219F807800E662BC /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A624219F807800E662BC /* Field_SurveyUITests.swift */; };
+		EF77A634219F839300E662BC /* fieldObservations.json in Resources */ = {isa = PBXBuildFile; fileRef = EF77A633219F839300E662BC /* fieldObservations.json */; };
+		EF77A636219F83ED00E662BC /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A635219F83ED00E662BC /* Classification.swift */; };
+		EF77A638219F84B800E662BC /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A637219F84B800E662BC /* Observation.swift */; };
+		EF77A63E219F8ED100E662BC /* ObservationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A63D219F8ED100E662BC /* ObservationLoader.swift */; };
+		EF77A640219F93B800E662BC /* ObservationSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A63F219F93B800E662BC /* ObservationSetViewController.swift */; };
+		EF77A642219F985B00E662BC /* ObservationsSetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A641219F985B00E662BC /* ObservationsSetDetailViewController.swift */; };
+		EF77A644219F9F4A00E662BC /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77A643219F9F4A00E662BC /* ObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		EF77A620219F807800E662BC /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF77A624219F807800E662BC /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		EF77A626219F807800E662BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF77A633219F839300E662BC /* fieldObservations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fieldObservations.json; sourceTree = "<group>"; };
+		EF77A635219F83ED00E662BC /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		EF77A637219F84B800E662BC /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		EF77A63D219F8ED100E662BC /* ObservationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationLoader.swift; sourceTree = "<group>"; };
+		EF77A63F219F93B800E662BC /* ObservationSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationSetViewController.swift; sourceTree = "<group>"; };
+		EF77A641219F985B00E662BC /* ObservationsSetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsSetDetailViewController.swift; sourceTree = "<group>"; };
+		EF77A643219F9F4A00E662BC /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +109,15 @@
 		EF77A603219F807700E662BC /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				EF77A632219F826100E662BC /* Model */,
 				EF77A604219F807700E662BC /* AppDelegate.swift */,
 				EF77A608219F807700E662BC /* Main.storyboard */,
 				EF77A60B219F807800E662BC /* Assets.xcassets */,
 				EF77A60D219F807800E662BC /* LaunchScreen.storyboard */,
 				EF77A610219F807800E662BC /* Info.plist */,
+				EF77A63F219F93B800E662BC /* ObservationSetViewController.swift */,
+				EF77A641219F985B00E662BC /* ObservationsSetDetailViewController.swift */,
+				EF77A643219F9F4A00E662BC /* ObservationTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -120,6 +138,17 @@
 				EF77A626219F807800E662BC /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		EF77A632219F826100E662BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF77A633219F839300E662BC /* fieldObservations.json */,
+				EF77A635219F83ED00E662BC /* Classification.swift */,
+				EF77A637219F84B800E662BC /* Observation.swift */,
+				EF77A63D219F8ED100E662BC /* ObservationLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF77A60F219F807800E662BC /* LaunchScreen.storyboard in Resources */,
+				EF77A634219F839300E662BC /* fieldObservations.json in Resources */,
 				EF77A60C219F807800E662BC /* Assets.xcassets in Resources */,
 				EF77A60A219F807700E662BC /* Main.storyboard in Resources */,
 			);
@@ -253,7 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF77A640219F93B800E662BC /* ObservationSetViewController.swift in Sources */,
 				EF77A605219F807700E662BC /* AppDelegate.swift in Sources */,
+				EF77A638219F84B800E662BC /* Observation.swift in Sources */,
+				EF77A644219F9F4A00E662BC /* ObservationTableViewCell.swift in Sources */,
+				EF77A636219F83ED00E662BC /* Classification.swift in Sources */,
+				EF77A63E219F8ED100E662BC /* ObservationLoader.swift in Sources */,
+				EF77A642219F985B00E662BC /* ObservationsSetDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
